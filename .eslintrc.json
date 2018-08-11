@@ -1,0 +1,7 @@
+{
+  "extends": ["standard", "standard-preact"],
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  }
+}

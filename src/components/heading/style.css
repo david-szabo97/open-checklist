@@ -1,0 +1,10 @@
+.Heading {
+	padding-left: 16px;
+	margin: 8px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.86);
+	font-size: 14px;
+	vertical-align: middle;
+	position: relative;
+}

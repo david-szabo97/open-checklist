@@ -1,0 +1,113 @@
+.Item {
+  padding: 0 24px 0 0;
+  color: rgba(0, 0, 0, .86);
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: background 200ms ease-in-out;
+  display: flex;
+  flex: 1 0 auto;
+  cursor: ns-resize;
+}
+
+.ItemText {
+  overflow: hidden;
+  padding-left: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  display: inline-block;
+}
+
+.ItemActive {
+  background: rgba(0, 0, 0, .12);
+}
+.Item:not(.ItemActive):hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .08);
+}
+
+.ItemSub {
+  padding-left: 48px;
+}
+
+.ItemDirectory {
+  padding-right: 48px;
+}
+
+.ItemDirectory:after {
+  position: absolute;
+  content: "🡪";
+  right: 8px;
+  width: 32px;
+  line-height: 50px;
+}
+
+.AddTextArea {
+  background: transparent;
+  border-radius: 0;
+  display: block;
+  outline: 0;
+  overflow: hidden;
+  resize: none;
+  top: 0;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeSpeed;
+  height: 50px;
+  line-height: 50px;
+}
+
+.SidebarItemAdd {
+  cursor: text !important;
+}
+
+.SidebarItemAdd:hover {
+  background: transparent !important;
+  cursor: text !important;
+}
+
+.Actions {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 0;
+  user-select: none;
+}
+
+.ActionDecIndent, .ActionIncIndent {
+  background: rgba(0, 0, 255, .32);
+  color: white;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.ActionDecIndent:hover, .ActionIncIndent:hover {
+  background: rgba(0, 0, 255, .90);
+  opacity: 0.75;
+}
+
+.Actions * + * {
+  margin-left: 4px;
+}
+
+.Actions *[disabled] {
+  background: rgba(0, 0, 0, .32);
+  cursor: not-allowed;
+}
+
+.Actions *[disabled]:hover {
+  opacity: 0.5;
+  background: rgba(0, 0, 0, .32);
+}

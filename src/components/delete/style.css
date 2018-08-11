@@ -1,0 +1,24 @@
+.Delete {
+  /*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;*/
+  background: rgba(255, 0, 0, .32);
+  color: white;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  opacity: 0.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Delete:hover {
+  background: rgba(255, 0, 0, .90);
+  opacity: 0.75;
+}

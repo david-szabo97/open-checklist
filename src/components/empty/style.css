@@ -1,0 +1,14 @@
+.Empty {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  font-size: 2rem;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-align: center;
+  color: rgba(0,0,0,.56);
+}
