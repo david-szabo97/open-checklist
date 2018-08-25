@@ -5,7 +5,13 @@
   align-items: center;
   align-content: center;
   font-size: 2rem;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: rgba(0,0,0,.56);
+}
+
+@media (min-width: 768px) {
+  .Empty {
+    width: 100%;
+  }
 }
