@@ -1,7 +1,15 @@
 .Sidebar {
-  width: 300px;
+  width: 100%;
   left: 0;
   top: 0;
   height: 100vh;
   position: fixed;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .Sidebar {
+    width: 300px;
+    background: transparent;
+  }
 }

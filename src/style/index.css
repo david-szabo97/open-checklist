@@ -20,6 +20,7 @@ body {
   position: relative;
   display: flex;
   background: #f6f6f6;
+  margin-bottom: 56px;
 }
 
 textarea, input, button {
@@ -35,7 +36,6 @@ textarea, input, button {
 }
 
 main {
-  margin-left: 300px;
   display: flex;
   flex: 1 0 auto;
   min-height: 100%;
@@ -62,4 +62,14 @@ main {
   transition: transform 500ms ease-out, opacity 500ms ease-out !important;
   transform: translateY(0) !important;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-bottom: 0;
+  }
+
+  main {
+    margin-left: 300px;
+  }
 }
